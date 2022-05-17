@@ -76,7 +76,7 @@ form .input {
   border-radius: 5px;
   border: 1px solid #94a3b8;
   font-size: 1rem;
-  padding-left: 1px;
+  padding-left: 4px;
 }
 
 form input:focus {
@@ -123,7 +123,7 @@ label {
   gap: 1rem;
   padding: 40px;
   width: 100%;
-  max-width: 800px;
+  max-width: 1100px;
   margin-top: 20px;
 }
 
@@ -131,37 +131,55 @@ label {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
-  padding: 30px;
-  gap: 0.75rem;
+  padding: 50px 30px;
+  gap: 1.25rem;
   border-radius: 5px;
   background-color: #fff;
 }
 
-.read {
-  background-color: rgb(150, 241, 166);
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: 1px solid #475569;
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
-.read:hover,
+.read {
+  background-color: rgb(150, 241, 166);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #475569;
+  font-size: 1.25rem;
+}
+
+.read:hover {
+  background-color: #15c20f;
+  color: #f1f5f9;
+  cursor: pointer;
+}
+
 .not-read:hover {
+  background-color: #f74a4a;
+  color: #f1f5f9;
   cursor: pointer;
 }
 
 .remove-book {
-  padding: 5px 10px;
+  padding: 10px 20px;
   border-radius: 5px;
   border: 1px solid #475569;
+  font-size: 1.25rem;
 }
 
 .remove-book:hover {
   cursor: pointer;
+  background-color: #334155;
+  color: #f1f5f9;
 }
 
 .not-read {
-  background-color: rgb(236, 120, 120);
-  padding: 5px 10px;
+  background-color: rgb(243, 193, 193);
+  padding: 10px 20px;
   border-radius: 5px;
   border: 1px solid #475569;
+  font-size: 1.25rem;
 }
