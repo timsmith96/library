@@ -36,10 +36,10 @@ function displayBooks(books) {
     newBook.innerHTML = `<p class="title">${book.title}</p>
   <p class="author">${book.author}</p>
   <p class="pages">${book.pages} pages</p>
-  <button onclick=toggleRead(event) data-index=${index} class=${
+  <div class="button-group"><button onclick=toggleRead(event) data-index=${index} class= ${
       book.read ? 'read' : 'not-read'
     }>${book.read === true ? 'Read' : 'Not read'}</button>
-  <button onclick="remove(event)" data-index= ${index} class="remove-book">Remove</button>`;
+<button onclick="remove(event)" data-index= ${index} class="remove-book">Remove</button></div>`;
     booksContainer.appendChild(newBook);
   });
 }
